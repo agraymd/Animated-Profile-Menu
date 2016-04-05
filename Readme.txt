@@ -1,3 +1,5 @@
+LIVE DEMO: https://jsfiddle.net/tddfevhv/
+
 This "Animated Profile Menu" is an element that contains a picture with a button underneath. 
 
 When you click the button the menu expands 4 links with a pretty animation. Click again to close. 
