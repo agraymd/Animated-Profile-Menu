@@ -1,0 +1,273 @@
+/*RESET*/
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	*{
+		letter-spacing: normal;
+	}
+/* END RESET */
+
+/*Disables text selection*/
+body{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(https://i.imgsafe.org/100dde0.png); 
+}
+/* Text Center class */
+.center{
+	text-align: center;
+}
+/*Class that centers img elements in their container*/
+img.centerImg{
+	display: block;
+	margin: 0 auto;
+}
+/*profileDropdown*/
+
+	/* PROFILE STYLES */
+	ul, li {
+	    margin: 0;
+	    padding: 0;
+	    list-style-type: none;
+	}
+
+	.container {
+	    margin: 0px auto 0;
+	    width: 378px;
+	}
+
+	.profile-container {
+	    position: relative;
+	    width: 378px;
+	    float: left;
+	}
+
+	.profile {
+	    background: #f6f6f6;
+	    float: left;
+	    padding: 4px;
+	    border-radius: 3px;
+	    -o-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+	}
+
+	.avatar img {
+	    display: block;
+	    border-radius: 5px;
+	    -o-border-radius: 5px;
+	    -ms-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	}
+
+	#portraitCaption{
+		font-style: italic;
+		color: #b9b9b9;
+		font-size: .75em;
+	}
+
+	.follow {
+	    margin: 0px 0 0 0;
+	}
+
+	.follow button {
+	    display: block;
+	    width: 100%;
+	    border: 0;
+	    background: #268cde;
+	    color: white;
+	    padding: 7px 0;
+	    margin: 0;
+	    border-radius: 3px;
+	    -o-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+	    cursor: pointer;
+	}
+
+
+	.follow button:hover {
+	    background: #3096e8;
+	}
+
+	.follow button:active {
+	    background: #2085d6;
+	}
+
+	.profile-list {
+	    overflow: hidden;
+	    width: 100%;
+	    box-sizing: border-box;
+	    color: #767b7e;
+	    font-size: 13px;
+	}
+
+	.profile-list li {
+	    cursor: pointer;
+	    background: #ffffff;
+	    border-top: 1px solid #e5e6e6;
+	}
+
+	.profile-list li:last-child {  
+	    border-radius: 0 0 3px 3px;;
+	    -o-border-radius: 0 0 3px 3px;
+	    -ms-border-radius: 0 0 3px 3px;
+	    -moz-border-radius: 0 0 3px 3px;
+	    -webkit-border-radius: 0 0 3px 3px;
+	}
+
+
+	.profile-list .profile {
+	    border-radius: 3px 3px 0 0;
+	    position: relative;
+	}
+
+
+
+	.profile-list li {
+	    -webkit-transform-origin: 50% 0%;
+	    -o-transform-origin: 50% 0%;
+	    transform-origin: 50% 0%;
+	    -webkit-transform: perspective(60px) rotateX(-90deg);
+	    -o-transform: perspective(60px) rotateX(-90deg);
+	    transform: perspective(60px) rotateX(-90deg);
+	    -moz-box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+	}
+	.profile-list li a{
+		display: block;
+		padding: 15px 10px;
+	}
+
+	.profile-container .profile-list .fourth {
+	    transition-delay: 0.6s;
+	    -o-transition-delay: 0.6s;
+	    transition-delay: 0.6s;
+	} 
+
+	.profile-list .first {
+	    -webkit-transition: 0.2s linear 0.8s;
+	    -o-transition: 0.2s linear 0.8s;
+	    transition: 0.2s linear 0.8s;
+	}
+
+	.profile-list .second {
+	    -webkit-transition: 0.2s linear 0.6s;
+	    -o-transition: 0.2s linear 0.6s;
+	    transition: 0.2s linear 0.6s;
+	}
+
+	.profile-list .third {
+	    -webkit-transition: 0.2s linear 0.4s;
+	    -o-transition: 0.2s linear 0.4s;
+	    transition: 0.2s linear 0.4s;
+	}
+
+	.profile-list .fourth {
+	    -webkit-transition: 0.2s linear 0.2s;
+	    -o-transition: 0.2s linear 0.2s;
+	    transition: 0.2s linear 0.2s;
+	}
+
+	.profile-container .profile-list li {
+	    -webkit-transform: perspective(350px) rotateX(0deg);
+	    -o-transform: perspective(350px) rotateX(0deg);
+	    transform: perspective(350px) rotateX(0deg);
+	    -webkit-transition: 0.2s linear 0s;
+	    -o-transition: 0.2s linear 0s;
+	    transition: 0.2s linear 0s;
+	}
+
+	.profile-container .profile-list .second {
+	    -webkit-transition-delay: 0.2s;
+	    -o-transition-delay: 0.2s;
+	    transition-delay: 0.2s;
+	}
+
+	.profile-container .profile-list .third {
+	    -webkit-transition-delay: 0.4s;
+	    -o-transition-delay: 0.4s;
+	    transition-delay: 0.4s;
+	}
+
+	.profile-list li a{
+		color: #268CDE;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+
+	.follow p{
+		text-transform: uppercase;
+		font-family: Times New Roman, Serif;
+		font-size: 1.25em;
+	}
+
+		.profile-list li a:hover{
+		background-color: #e0e0e0;
+
+	}
